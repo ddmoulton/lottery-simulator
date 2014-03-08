@@ -186,7 +186,7 @@ function swapNumbers() {
     
     $('#spent').html("Spent<br />$" + spent);
     $('#earned').html("Winnings<br />$" + earned);
-    $('#average').html("Return on the $<br />$" + (earned/spent));
+    $('#average').html("Return/$<br />$" + (earned/spent));
     $('#net').html("Net Gain<br>$" + (earned-spent))
 }
 
@@ -206,7 +206,7 @@ function winnings() {
     return winnings;
 }
 function removeDivs() {
-    $('.numSet:nth-child(20)').remove();
+    $('.numSet:nth-child(2)').remove();
 }
 
 
