@@ -1,0 +1,21 @@
+/* 
+    Document   : numbers
+    Created on : Feb 7, 2014, 10:38:57 PM
+    Author     : Danny
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+
+.num,.num2 {
+    font-size: 28px;
+}
+
+.num2 {
+    background-color: lightsalmon;
+}
+
+.contains {
+    background-color: lightgreen;
+}
