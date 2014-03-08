@@ -15,6 +15,8 @@ var fiveTotalPlusOne = 0;
 var PlusOne = 0;
 var basePool = 75;
 var basePool2 = 15;
+var intervalNum = getIntervalNum();
+
 
 function baseNums() {
     var usedNums = new Array();
@@ -155,12 +157,17 @@ $('#iterate').click(function() {
     removeDivs();
 //    }
 });
+
+
 window.setInterval(function() {
     totalCount++;
     newNums();
     swapNumbers();
     removeDivs();
-}, 1);
+}, interval);
+
+
+
 function swapNumbers() {
     $('#one').text(oneTotal);
     $('#two').text(twoTotal);
@@ -201,4 +208,11 @@ function winnings() {
 }
 function removeDivs() {
     $('.numSet:nth-child(20)').remove();
+}
+
+
+
+function getIntervalNum(sliderInput) {
+
+    
 }

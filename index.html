@@ -8,6 +8,7 @@
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
         <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
         <link href="css/style.css" rel="stylesheet" media="screen">
+        <link href="css/slider.css" rel="stylesheet" media="screen">
         
         <meta name="viewport" content="user-scalable=no" />
         
@@ -61,7 +62,34 @@
         
         
     <div id="footer">
+        <div class="container">
+            <div class="row">
                 
+                 <div >
+                    <input 
+                           type="text" 
+                           class="col-xs-12 slider"
+                           id="calcRate"
+                           value="" 
+                           data-slider-min="1" 
+                           data-slider-max="100" 
+                           data-slider-step="1" 
+                           data-slider-value="20" 
+                           data-slider-orientation="horizontal" 
+                           data-slider-selection="after"
+                           data-slider-tooltip="show" 
+                    >
+                </div>
+                
+                <div class="col-xs-6">
+                    <button id="manual" class='btn btn-lg btn-block'>Manual</button>
+                </div>
+                <div class="col-xs-6">
+                    <button id="automatic" class='btn btn-lg btn-block' >Automatic</button>
+                </div>
+               
+            </div>
+        </div>
          <div id="results" class="container">
                 <div class="row results">
                     <div class="col-xs-3" id="spent">
@@ -81,5 +109,16 @@
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/numbers.js"></script>
+        <script src="js/slider.js"></script>
+        <script> 
+        
+            
+      $('#calcRate').slider().on('slideStop', function() {
+        var interval = $(this).data('slider').getValue();
+       interval = 100 / interval;
+          console.log(interval);
+      });
+            
+        </script>
     </body>
 </html>
