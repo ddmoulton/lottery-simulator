@@ -16,7 +16,7 @@
     <body>
         <div class="container">
             <div class="row baseNums">
-                <div class="col-md-9">
+                <div class="col-md-12">
                     <div class="col-xs-2">
                         <span class="num">0</span>    
                     </div>
@@ -28,7 +28,7 @@
                     </div>
                     <div class="col-xs-2">
                         <span class="num">0</span>    
-                    </div>
+                    </div> 
                     <div class="col-xs-2">
                         <span class="num">0</span>    
                     </div>
@@ -38,23 +38,24 @@
                     <div id="newNumberArea">
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-12"> 
                     <!--<a class="btn btn-success" id="iterate" href="#">Click Here</a>-->
-                    <br />
-                    <p>Total: <span id="count"></span></p>
-                    <br />
-                    <p>Nothing: <span id="nothing">0</span></p>
-                    <p>+1: <span id="plusOne">0</span></p>
-                    <p>1: <span id="one">0</span></p>
-                    <p>1+1: <span id="onePlusOne">0</span></p>
-                    <p>2: <span id="two">0</span></p>
-                    <p>2+1: <span id="twoPlusOne">0</span></p>
-                    <p>3: <span id="three">0</span></p>
-                    <p>3+1: <span id="threePlusOne">0</span>
-                    <p>4: <span id="four">0</span></p>
-                    <p>4+1: <span id="fourPlusOne">0</span></p>
-                    <p>5: <span id="five">0</span></p>
-                    <p>5 + 1: <span id="fivePlusOne">0</span></p>
+                    <table class="table">
+                        <p>Total: <span id="count"></span></p>
+                        <br />
+                        <p>Nothing: <span id="nothing">0</span></p>
+                        <p>+1: <span id="plusOne">0</span></p>
+                        <p>1: <span id="one">0</span></p>
+                        <p>1+1: <span id="onePlusOne">0</span></p>
+                        <p>2: <span id="two">0</span></p>
+                        <p>2+1: <span id="twoPlusOne">0</span></p>
+                        <p>3: <span id="three">0</span></p>
+                        <p>3+1: <span id="threePlusOne">0</span>
+                        <p>4: <span id="four">0</span></p>
+                        <p>4+1: <span id="fourPlusOne">0</span></p>
+                        <p>5: <span id="five">0</span></p>
+                        <p>5 + 1: <span id="fivePlusOne">0</span></p>
+                    </table>
                 </div>
             </div>
         </div>
@@ -65,29 +66,24 @@
         <div class="container">
             <div class="row">
                 
-                 <div >
+                 <div class="col-xs-12">
                     <input 
                            type="text" 
                            class="col-xs-12 slider"
                            id="calcRate"
                            value="" 
                            data-slider-min="1" 
-                           data-slider-max="100" 
+                           data-slider-max="50" 
                            data-slider-step="1" 
                            data-slider-value="20" 
                            data-slider-orientation="horizontal" 
                            data-slider-selection="after"
-                           data-slider-tooltip="show" 
+                           data-slider-tooltip="hide" 
                     >
                 </div>
                 
-                <div class="col-xs-6">
-                    <button id="manual" class='btn btn-lg btn-block'>Manual</button>
-                </div>
-                <div class="col-xs-6">
-                    <button id="automatic" class='btn btn-lg btn-block' >Automatic</button>
-                </div>
-               
+            
+                
             </div>
         </div>
          <div id="results" class="container">
@@ -104,28 +100,15 @@
                 </div>
             </div>
     </div>
-        
-        
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/numbers.js"></script>
         <script src="js/slider.js"></script>
         <script> 
-        
-            
-        function setInterval(input) {
-            console.log(input);
-            var interval = input;
-            interval = 100 / interval;
-            console.log(interval);
-        }
-            
         $('#calcRate').slider().on('slideStop', function() {
-          
             var input = $('#calcRate').data('slider').getValue();
-            setInterval(input);
+            setIntervalNum(input);
          });
-            
         </script>
     </body>
 </html>

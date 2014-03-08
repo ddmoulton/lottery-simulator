@@ -15,8 +15,7 @@ var fiveTotalPlusOne = 0;
 var PlusOne = 0;
 var basePool = 75;
 var basePool2 = 15;
-var intervalNum = getIntervalNum();
-
+var rate = 100;
 
 function baseNums() {
     var usedNums = new Array();
@@ -159,12 +158,12 @@ $('#iterate').click(function() {
 });
 
 
-window.setInterval(function() {
+var simulatorInterval = window.setInterval(function() {
     totalCount++;
     newNums();
     swapNumbers();
     removeDivs();
-}, 500);
+}, rate);
 
 
 
@@ -211,8 +210,20 @@ function removeDivs() {
 }
 
 
+function setIntervalNum(inputNum) {
+    clearInterval(simulatorInterval);    
+    rate = 1000 / inputNum;
+    simulatorInterval = window.setInterval(function() {
+        totalCount++;
+        newNums();
+        swapNumbers();
+        removeDivs();
+    }, rate);
 
-function getIntervalNum(sliderInput) {
 
-    
+    console.log(rate);
+//            interval = inputNum;
+//            interval = 100 / interval;
+//            console.log(interval);
 }
+        
