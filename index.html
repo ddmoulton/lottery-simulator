@@ -113,11 +113,18 @@
         <script> 
         
             
-      $('#calcRate').slider().on('slideStop', function() {
-        var interval = $(this).data('slider').getValue();
-       interval = 100 / interval;
-          console.log(interval);
-      });
+        function setInterval(input) {
+            console.log(input);
+            var interval = input;
+            interval = 100 / interval;
+            console.log(interval);
+        }
+            
+        $('#calcRate').slider().on('slideStop', function() {
+          
+            var input = $('#calcRate').data('slider').getValue();
+            setInterval(input);
+         });
             
         </script>
     </body>

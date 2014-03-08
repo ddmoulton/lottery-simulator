@@ -164,7 +164,7 @@ window.setInterval(function() {
     newNums();
     swapNumbers();
     removeDivs();
-}, interval);
+}, 500);
 
 
 
