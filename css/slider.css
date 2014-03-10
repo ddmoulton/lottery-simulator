@@ -10,6 +10,7 @@
   display: inline-block;
   vertical-align: middle;
   position: relative;
+    width: 90% !important;
 }
 .slider.slider-horizontal {
   width: 100%;
