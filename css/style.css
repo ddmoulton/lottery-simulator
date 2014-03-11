@@ -10,7 +10,7 @@ body {
     margin-bottom: 120px;
 }
 
-.num,.num2 {
+.num, .num2 {
     font-size: 28px;
 }
 
@@ -26,15 +26,10 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 100px;
-       
+    height: 100px;       
     background-color: #F5F5F5;
-    }
-
-
-#results {
-
 }
+
 
 .slider {
 
@@ -48,7 +43,11 @@ body {
     margin-top: 20px;
 }
 
-table td {
+.numSet td, .mainNums td {
     text-align: center;   
     width: 15%;
+}
+
+.resultsTable td, .resultsTable th {
+    text-align: center;
 }
