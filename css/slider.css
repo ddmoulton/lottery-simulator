@@ -77,13 +77,13 @@
   position: absolute;
   cursor: pointer;
   background-color: #f7f7f7;
-  background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
-  background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
-  background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
-  background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+  background-image: -moz-linear-gradient(top, #5E9BF7, #5E9BF7);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5E9BF7), to(#5E9BF7));
+  background-image: -webkit-linear-gradient(top, #5E9BF7, #5E9BF7);
+  background-image: -o-linear-gradient(top, #5E9BF7, #5E9BF7);
+  background-image: linear-gradient(to bottom, #5E9BF7, #5E9BF7);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff9f9f9', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5E9BF7', endColorstr='#5E9BF7', GradientType=0);
   -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -94,11 +94,11 @@
 .slider-selection {
   position: absolute;
   background-color: #f7f7f7;
-  background-image: -moz-linear-gradient(top, #f9f9f9, #f5f5f5);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f9f9f9), to(#f5f5f5));
-  background-image: -webkit-linear-gradient(top, #f9f9f9, #f5f5f5);
-  background-image: -o-linear-gradient(top, #f9f9f9, #f5f5f5);
-  background-image: linear-gradient(to bottom, #f9f9f9, #f5f5f5);
+  background-image: -moz-linear-gradient(top, #5E84FF, #3F56FF);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5E84FF), to(#3F56FF));
+  background-image: -webkit-linear-gradient(top, #5E84FF, #3F56FF);
+  background-image: -o-linear-gradient(top, #5E84FF, #3F56FF);
+  background-image: linear-gradient(to bottom, #5E84FF, #3F56FF);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff9f9f9', endColorstr='#fff5f5f5', GradientType=0);
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
@@ -116,17 +116,17 @@
   width: 20px;
   height: 20px;
   background-color: #0e90d2;
-  background-image: -moz-linear-gradient(top, #149bdf, #0480be);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#149bdf), to(#0480be));
-  background-image: -webkit-linear-gradient(top, #149bdf, #0480be);
-  background-image: -o-linear-gradient(top, #149bdf, #0480be);
-  background-image: linear-gradient(to bottom, #149bdf, #0480be);
+  background-image: -moz-linear-gradient(top, #cccccc, #e4e4e4);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cccccc), to(#e4e4e4));
+  background-image: -webkit-linear-gradient(top, #cccccc, #e4e4e4);
+  background-image: -o-linear-gradient(top, #cccccc, #e4e4e4);
+  background-image: linear-gradient(to bottom, #cccccc, #e4e4e4);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff149bdf', endColorstr='#ff0480be', GradientType=0);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);
-  opacity: 0.8;
+  -webkit-box-shadow: inset 0 1px 0 rgba(0,0,0,.2), 0 1px 2px rgba(0,0,0,.65);
+  -moz-box-shadow: inset 0 1px 0 rgba(0,0,0,.2), 0 1px 2px rgba(0,0,0,.65);
+  box-shadow: inset 0 1px 0 rgba(0,0,0,.2), 0 1px 2px rgba(0,0,0,.65);
+  opacity: 0.95;
   border: 0px solid transparent;
 }
 .slider-handle.round {
