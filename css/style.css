@@ -47,3 +47,8 @@ body {
 #results {
     margin-top: 20px;
 }
+
+table td {
+    text-align: center;   
+    width: 15%;
+}

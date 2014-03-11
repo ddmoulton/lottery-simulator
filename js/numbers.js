@@ -44,12 +44,12 @@ function newNums() {
         }
         newNums.push(randomNum);
     }
-    var prepender = "<div class='numSet'>";
+    var prepender = "<table class='numSet table'><tbody><tr>";
     for (var i = 0; i < 5; i++) {
-        prepender = prepender.concat("<div class='col-xs-2 randomNum active'>" + newNums[i] + "</div>");
+        prepender = prepender.concat("<td class='randomNum active'>" + newNums[i] + "</td>");
     }
-    prepender = prepender.concat("<div class='col-xs-2 randomNum2 active2'>" + randomNumberGenerator2() + "</div>");
-    prepender = prepender.concat("</div>");
+    prepender = prepender.concat("<td class='randomNum2 active2'>" + randomNumberGenerator2() + "</td>");
+    prepender = prepender.concat("</tr></tbody></table");
     $(prepender).prependTo($('#newNumberArea'));
     $('.active').each(function() {
         var currentNumber = $(this).text() * 1;
