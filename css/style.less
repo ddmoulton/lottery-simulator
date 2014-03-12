@@ -1,0 +1,70 @@
+/* 
+    Document   : numbers
+    Created on : Feb 7, 2014, 10:38:57 PM
+    Author     : Danny
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@lightsalmon: rgba(255, 160, 122,1);
+@lightgreen: rgba(144, 238, 144,1);
+
+@slider-height: 10px;
+@slider-margin-bottom: 10px;
+@results-margin-top: 20px;
+
+@footer-width: 100%;
+@footer-height: 60px + @slider-height + @slider-margin-bottom + @results-margin-top;
+@footer-bg-color: rgba(245, 245, 245,1);
+.center() {
+    text-align: center;
+}
+.fixed-footer() {
+    position: fixed;
+    bottom: 0;
+    width: @footer-width;
+    height: @footer-height;  
+}
+
+body {
+    margin-bottom: @footer-height;
+}
+
+.num, .num2 {
+    font-size: 28px;
+}
+
+.num2 {
+    background-color: @lightsalmon;
+}
+
+.contains {
+    background-color: @lightgreen;
+}
+
+#footer {
+    .fixed-footer();
+    background-color: @footer-bg-color;
+}
+
+
+.slider {
+
+    margin-bottom: @slider-margin-bottom;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: @slider-height;
+}
+
+#results {
+    margin-top: @results-margin-top;
+}
+
+.numSet td, .mainNums td {
+    .center();  
+    width: 15%;
+}
+
+.resultsTable td, .resultsTable th {
+    .center();
+}
