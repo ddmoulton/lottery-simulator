@@ -17,6 +17,23 @@ var basePool = 75;
 var basePool2 = 15;
 var rate = 100;
 
+
+
+var nonePlus = 1;
+var onePlus = 2;
+var twoPlus = 5;
+var three = 5;
+var threePlus = 50;
+var four = 500;
+var fourPlus = 5000;
+var five = 1000000;
+var fivePlus = 990000000;
+
+$('td').data("title", "Prize");
+$('#nothing').data("content", "$0");
+$('#plusOne').data("content", "$" + nonePlus);
+
+
 function baseNums() {
     var usedNums = new Array();
     var randomNum = randomNumberGenerator();
@@ -186,25 +203,29 @@ function swapNumbers() {
     
     $('#spent').html("Spent<br />$" + spent);
     $('#earned').html("Winnings<br />$" + earned);
-    $('#average').html("Return/$<br />$" + (earned/spent));
+    var rateOfReturn = earned/spent;
+    var n = rateOfReturn.toFixed(3);
+    $('#average').html("Return/$<br />$" + (n));
     $('#net').html("Net Gain<br>$" + (earned-spent))
 }
 
 function winnings() {
 
-    var winningsPlus = PlusOne * 1;
-    var winningsOnePlus = oneTotalPlusOne * 2;
-    var winningsTwoPlus = twoTotalPlusOne * 5;
-    var winningsThree = threeTotal * 5;
-    var winningsThreePlus = threeTotalPlusOne * 50;
-    var winningsFour = fourTotal * 500;
-    var winningsFourPlus = fourTotalPlusOne * 5000;
-    var winningsFive = fiveTotal * 1000000;
-    var winningsFivePlus = fiveTotalPlusOne * 99000000;
+    var winningsPlus = PlusOne * nonePlus;
+    var winningsOnePlus = oneTotalPlusOne * onePlus;
+    var winningsTwoPlus = twoTotalPlusOne * twoPlus;
+    var winningsThree = threeTotal * three;
+    var winningsThreePlus = threeTotalPlusOne * threePlus;
+    var winningsFour = fourTotal * four;
+    var winningsFourPlus = fourTotalPlusOne * fourPlus;
+    var winningsFive = fiveTotal * five;
+    var winningsFivePlus = fiveTotalPlusOne * fivePlus;
     var winnings = winningsPlus + winningsOnePlus + winningsTwoPlus + winningsThree + winningsThreePlus + winningsFour + winningsFourPlus + winningsFive + winningsFivePlus;
 
     return winnings;
 }
+
+
 function removeDivs() {
     $('.numSet:nth-child(2)').remove();
 }
